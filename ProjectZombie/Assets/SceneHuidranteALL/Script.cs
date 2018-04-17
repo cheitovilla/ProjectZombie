@@ -23,4 +23,8 @@ public class Script : MonoBehaviour {
     public void Volver() {
         anim.SetTrigger("idle");
     }
+
+    public void Desmontar() {
+        anim.SetTrigger("desmontar");
+    }
 }
