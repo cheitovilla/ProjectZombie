@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ScenaHidrante.unity
+- path: Assets/Scenes/ScenaHidrante.unity
   isLoaded: 1
   isActive: 1
