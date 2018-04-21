@@ -2,41 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : MonoBehaviour {
+public class Zombie  {
 
-    public string name;
-    public int brainsEaten;
-    public int hitPoints;
+  
     GameObject zombieMesh;
-    // Use this for initialization
-    void Start() {
+    string colorito;
 
-        string[] names = new string[] {
-            "stubbs",
-            "rob",
-            "white"
-        };
-
-        for (int i = 0; i < names.Length; i++)
-        {
-            Zombie z = new Zombie(names[i], Random.Range(10, 15));
-            Debug.Log(z.name);
-        }
-
-       
-    }
-
-    public Zombie(string n, int hp) {
-        name = n;
-        brainsEaten = 0;
-        hitPoints = hp;
-        zombieMesh = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+    public Zombie(int clase) {
+      
+        zombieMesh = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        zombieMesh.GetComponent<Renderer>().material.color = Colores();
         Vector3 pos = new Vector3(Random.Range(-10,10), 0, Random.Range(-10,10));
         zombieMesh.transform.position = pos;
+        colorito = zombieMesh.GetComponent<Renderer>().material.color.ToString();
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    Color Colores()
+    {
+        int col = Random.Range(0, 3);
+        if (col == 0)
+        {
+            return Color.cyan;
+        }
+        if (col == 1)
+        {
+            return Color.green;
+        }
+        if (col == 2)
+        {
+            return Color.magenta;
+        }
+        return Color.gray;
+    }
+
+    public string Name_color
+    {
+        set{
+            colorito = value;
+        }
+        get{
+            return colorito;
+        }
+    }
+
+
 }
