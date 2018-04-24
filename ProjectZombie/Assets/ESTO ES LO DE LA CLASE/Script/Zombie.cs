@@ -8,30 +8,23 @@ public class Zombie  {
     GameObject zombieMesh;
     string name_col;
 
+    //Aquí se construye el zombie
     public Zombie() {
-
-     
             zombieMesh = GameObject.CreatePrimitive(PrimitiveType.Cube);
             zombieMesh.GetComponent<Renderer>().material.color = Colores();
             Vector3 pos = new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10));
             zombieMesh.transform.position = pos;
             name_col = zombieMesh.GetComponent<Renderer>().material.color.ToString();
-        
-      
-      
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+    //Aquí se le asigna los colores
     Color Colores()
     {
         int col = Random.Range(0, 3);
         if (col == 0)
         {
             return Color.cyan;
+            
         }
         if (col == 1)
         {

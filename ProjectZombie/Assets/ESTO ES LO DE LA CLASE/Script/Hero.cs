@@ -6,9 +6,8 @@ public class Hero  {
 
     GameObject heroeMesh;
 
+    //Aqui se crea el heroe
     public Hero() {
-
-
             heroeMesh = GameObject.CreatePrimitive(PrimitiveType.Capsule);
             heroeMesh.GetComponent<Renderer>().material.color = Color.black;
             Vector3 pos = new Vector3(0, 0, 0);
@@ -16,8 +15,6 @@ public class Hero  {
             heroeMesh.AddComponent<FPSMove>();
             heroeMesh.AddComponent<FPSAim>();
             heroeMesh.AddComponent<Camera>();
-        
-
     }
 
 

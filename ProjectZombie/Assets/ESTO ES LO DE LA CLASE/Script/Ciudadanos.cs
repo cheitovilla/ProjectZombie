@@ -7,6 +7,7 @@ public class Ciudadanos  {
     GameObject ciudadanoMesh;
     string name_col;
 
+    //Aquí se construyen los ciudadanos
     public Ciudadanos() {
         ciudadanoMesh = GameObject.CreatePrimitive(PrimitiveType.Cube);
         ciudadanoMesh.GetComponent<Renderer>().material.color = Color.white;
