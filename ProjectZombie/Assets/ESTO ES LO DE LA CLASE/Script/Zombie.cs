@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Zombie  {
 
-  
+  //Definimos variables
     GameObject zombieMesh;
     string name_col;
 
@@ -37,6 +37,7 @@ public class Zombie  {
         return Color.gray;
     }
 
+    // retorna el string del color en RGB
     public string Name_color
     {
         set

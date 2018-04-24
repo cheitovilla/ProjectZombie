@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hero  {
 
+    //Definimos variable
     GameObject heroeMesh;
 
     //Aqui se crea el heroe

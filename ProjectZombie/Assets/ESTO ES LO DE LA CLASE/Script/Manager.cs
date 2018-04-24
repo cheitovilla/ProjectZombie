@@ -14,9 +14,13 @@ public class Manager : MonoBehaviour {
             "Coluchi", "Elkin"
         };
 
-       //Aqui se llaman a los zombies
-        int randon_ = Random.Range(5,10);
-        Hero h = new Hero();
+        // la cantidad que van aparecer 
+        int randon_ = Random.Range(5,10); 
+
+        //se crea el hereo
+        new Hero();
+
+        //Acá se crean los zombies y los ciudadanos
         for (int i = 1; i < randon_; i++)
         {
             int ale = Random.Range(1, 3);
@@ -29,7 +33,7 @@ public class Manager : MonoBehaviour {
            else
             {
                 int rango_edad = Random.Range(15, 100);
-                Ciudadanos c = new Ciudadanos();
+                new Ciudadanos();
                 Debug.Log("Hola soy " + names[i] + ", y mi edad es " + rango_edad);
             }   
         }
