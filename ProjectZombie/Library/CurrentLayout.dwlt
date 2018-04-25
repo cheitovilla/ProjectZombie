@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 102, y: 363}
   m_MaxSize: {x: 4002, y: 12063}
   vertical: 1
-  controlID: 24
+  controlID: 12
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 23
+  controlID: 105
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 106
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,9 +344,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.5612469, y: -1.6267033, z: 2.7608337}
+    m_Target: {x: 0.6185789, y: -0.5118761, z: -0.57934284}
     speed: 2
-    m_Value: {x: -2.5612469, y: -1.6267033, z: 2.7608337}
+    m_Value: {x: 0.6185789, y: -0.5118761, z: -0.57934284}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -369,13 +369,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.23882495, y: 0.4434707, z: -0.123879924, w: 0.8549561}
+    m_Target: {x: 0.2664417, y: 0.23554838, z: -0.06732469, w: 0.93219787}
     speed: 2
-    m_Value: {x: 0.23882495, y: 0.4434707, z: -0.123879924, w: 0.8549561}
+    m_Value: {x: 0.26644176, y: 0.23554842, z: -0.067324705, w: 0.93219805}
   m_Size:
-    m_Target: 28.099043
+    m_Target: 17.730675
     speed: 2
-    m_Value: 28.099043
+    m_Value: 17.730675
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -591,9 +591,9 @@ MonoBehaviour:
     height: 456
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 56060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_SelectedIDs: 32250000
+    m_LastClickedID: 9522
+    m_ExpandedIDs: e4fbffff0000000032250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -726,18 +726,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8240000f2240000fc24000006250000
+    m_ExpandedIDs: 00000000a8240000f224000006250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Manager
-      m_OriginalName: Manager
+      m_Name: Monster
+      m_OriginalName: Monster
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1622
+      m_UserData: 9618
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
