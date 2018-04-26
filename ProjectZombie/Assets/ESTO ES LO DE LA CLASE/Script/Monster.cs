@@ -16,7 +16,7 @@ public class Monster : MonoBehaviour
 
     void Start()
     {
-        mState = MonsterState.attacking;
+        mState = MonsterState.standing;
         int number = (int)mState;
         Debug.Log(number);
 
@@ -27,6 +27,21 @@ public class Monster : MonoBehaviour
 
 	void Update ()
 	{
-		
+        if (mState == MonsterState.standing)
+        {
+            print("standing monster is standing");
+        }
+        if (mState == MonsterState.wandering)
+        {
+            print("wandering monster is wandering.");
+        }
+        if (mState == MonsterState.chasing)
+        {
+            print("chasing monster is chasing.");
+        }
+        if (mState == MonsterState.attacking)
+        {
+            print("attacking monster is attacking");
+        }
 	}
 }
