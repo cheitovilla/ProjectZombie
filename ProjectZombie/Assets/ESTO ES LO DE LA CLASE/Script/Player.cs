@@ -45,3 +45,11 @@ public class Player : MonoBehaviour {
 
 
 }
+
+public struct PlayerData {
+    public Vector3 pos;
+    public int hitPoints;
+    public int ammunition;
+    public float runSpeed;
+    public float walkSpeed;
+}

@@ -6,13 +6,7 @@ public class Cajas : MonoBehaviour {
 
     public BoxParameters myParameters; //pag 39
 
-    public struct BoxParameters {
-        public float width;
-        public float height;
-        public float depth;
-        public Color color;
-    }
-
+ 
 
 
 	// Use this for initialization
@@ -36,4 +30,11 @@ public class Cajas : MonoBehaviour {
         UpdateCube(myParameters);
     }
 
+}
+public struct BoxParameters
+{
+    public float width;
+    public float height;
+    public float depth;
+    public Color color;
 }
