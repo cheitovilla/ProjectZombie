@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Cajas : MonoBehaviour {
 
-    public BoxParameters myParameters; //pag 39
+    public BoxParameters myParameters; 
 
  
 
 
 	// Use this for initialization
 	void Start () {
-        myParameters.width = 2;
-        myParameters.height = 3;
-        myParameters.depth = 4;
+        myParameters.width = 20;
+        myParameters.height = 30;
+        myParameters.depth = 40;
         myParameters.color = new Color(1,0,0,1);
     }
 	
@@ -24,11 +24,7 @@ public class Cajas : MonoBehaviour {
         GetComponent<Renderer>().material.color = box.color;
 	}
 
-    void Update() {
-        float h = (100 * Mathf.Sin(Time.fixedDeltaTime)) / 10;
-        myParameters.height = h;
-        UpdateCube(myParameters);
-    }
+  
 
 }
 public struct BoxParameters

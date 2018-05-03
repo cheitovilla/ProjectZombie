@@ -15,7 +15,7 @@ public class Manager : MonoBehaviour {
         };
 
         // la cantidad que van aparecer 
-        int randon_ = Random.Range(5,10); 
+        int randon_ = Random.Range(10,20); 
 
         //se crea el hereo
         new Hero();
